@@ -1,0 +1,59 @@
+# NexT 主题配置覆盖
+# 使用 Gemini 主题（类似参考站点）
+scheme: Gemini
+
+# 侧边栏配置
+sidebar:
+  position: left
+  display: always
+  padding: 18
+  offset: 12
+
+# 头像
+avatar:
+  url: /head.jpg
+  rounded: true
+  rotated: false
+
+# 站点统计（文章数/分类数/标签数）
+site_state: true
+
+# 社交链接
+social:
+  GitHub: https://github.com/SYaoJun || fab fa-github
+  Twitter: https://x.com/Jacky2023z || fab fa-twitter
+
+
+social_icons:
+  enable: true
+  icons_only: false
+  transition: false
+
+# 友情链接
+links_settings:
+  icon: fa fa-link
+  title: 友情链接
+  layout: block
+
+links:
+  # 示例: 名称: 链接地址
+  # friend: https://example.com
+
+# 开启菜单
+menu:
+  home: / || fa fa-home
+  archives: /archives || fa fa-archive
+  tags: /tags || fa fa-tags
+  categories: /categories || fa fa-th
+  about: /about || fa fa-user
+
+# 开启 motion 动画
+motion:
+  enable: true
+  async: false
+  transition:
+    post_block: fadeIn
+    post_header: slideDownIn
+    post_body: slideDownIn
+    coll_header: slideLeftIn
+    sidebar: slideUpIn
