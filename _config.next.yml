@@ -29,6 +29,37 @@ social_icons:
   icons_only: false
   transition: false
 
+# Gitalk 评论系统
+# 基于 GitHub Issue 的评论系统
+# 配置说明：
+# 1. github_id: 您的 GitHub 用户名
+# 2. repo: 存储评论的 GitHub 仓库名称
+# 3. client_id: GitHub OAuth Application 的 Client ID
+# 4. client_secret: GitHub OAuth Application 的 Client Secret
+# 5. admin_user: 管理员用户名（通常与 github_id 相同）
+# 6. language: 评论系统语言，留空则自动检测
+# 7. distraction_free_mode: 是否启用无干扰模式
+
+# 评论系统设置
+comments:
+  style: tabs
+  active: gitalk
+  storage: true
+  lazyload: false
+  nav:
+    gitalk:
+      order: -1
+
+gitalk:
+  enable: true
+  github_id: syaojun
+  repo: syaojun.github.io
+  client_id: "Ov23liuPFA5t0Euqqpfo"
+  client_secret: "8b07fc2c1ddc89f3419504198d2b1afb99a315fd"
+  admin_user: syaojun
+  language: zh-CN
+  distraction_free_mode: true
+
 # 友情链接
 links_settings:
   icon: fa fa-link
