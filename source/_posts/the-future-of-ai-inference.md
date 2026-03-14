@@ -1,5 +1,5 @@
 ---
-title: the future of ai inference
+title: The Future of AI Inference
 date: 2026-03-14 23:30:21
 tags: llm
 ---
@@ -18,7 +18,7 @@ tags: llm
 ## high throughput != high goodput
 
 如图所示，一秒处理 10 个请求，算是高吞吐，但是满足 TTFT 和 TPOT 的只有 3 个，所以有效的请求很少。
-![high throughput](img_the_future_of/1.png)
+![high throughput](/images/1.png)
 
 2025年一个大的趋势就是 PD(prefill/decode) 分离。prefill 和 decode 分别在不同的 GPU 上执行，先让 prefill worker 处理请求，然后将数据传输到 decode worker 处理。
 
@@ -26,19 +26,19 @@ tags: llm
 
 在 PD 分离之前，最好用的技术是连续批处理，但是这会给prefill 和 decode 阶段带来一些干扰。
 
-![continuous batching cause interference](img_the_future_of/2.png)
+![continuous batching cause interference](/images/2.png)
 
 我来解释一下这个图片的含义：左边是传统连续批处理，右边是 PD 分离。图中蓝色柱子表示 decode 阶段，绿色柱子表示 prefill 阶段。在左边的图中，在 R1 执行 decode 的时候接收到了 R2 的请求，为了攒一批数据，R1 必须停下来等 R2 把 prefill执行完之后，再一起执行 decode。这个过程就带来了图中白色矩形显示的资源浪费。PD 分离之后就不会有这个问题，因为有两张卡。
 
 图 3 就说明一件事，只要你有足够多的钱，TTFT 和 TPOT “既要又要“也是可以做到的。
 
-![meet slo](img_the_future_of/3.png)
+![meet slo](/images/3.png)
 
 ## 机会: PD分离
 1. 消除prefill 和 decode 两个阶段存在的干扰。
 2. 将SLO 的目标自然的切分成两个优化方向：prefill 优化TTFT，decode 优化 TPOT。选择合适的资源和并行策略。
 
-![better goodput](img_the_future_of/4.png)
+![better goodput](/images/4.png)
 PD 分离之后每个 GPU 的利用率可以带来两倍的提升。原来 1 张卡，每秒每张卡处理 1.6 个请求，现在两张卡，每秒每张卡处理 3.3 个请求。
 
 ## 核心问题: XPYD
@@ -55,8 +55,8 @@ p2-communication: 最小化XP 和YD 之间的KV Cache 通信成本。
 
 这两个太超前了，我没怎么看懂。放两张图给大家感受一下，就是说可以将原本的执行流程切成小块，然后以 CPU 流水线的形式执行，可以起到一定加速的效果。
 
-![better goodput](img_the_future_of/5.png)
-![better goodput](img_the_future_of/6.png)
+![better goodput](/images/5.png)
+![better goodput](/images/6.png)
 扩散模型方面，主要是视频生成，目前厂家生成视频的成本都很高，演讲嘉宾自己团队开源了一个 fastvideo似乎在尝试解决相关的问题，感兴趣的可以看一下。
 
 ## 附录
