@@ -174,7 +174,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2026/03/14/the-future-of-ai-inference/" class="post-title-link" itemprop="url">the future of ai inference</a>
+            <a href="/2026/03/14/the-future-of-ai-inference/" class="post-title-link" itemprop="url">The Future of AI Inference</a>
         </h2>
 
         <div class="post-meta">
@@ -191,7 +191,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2026-03-15 00:53:23" itemprop="dateModified" datetime="2026-03-15T00:53:23+08:00">2026-03-15</time>
+                <time title="Modified: 2026-03-15 00:58:33" itemprop="dateModified" datetime="2026-03-15T00:58:33+08:00">2026-03-15</time>
               </span>
 
           
@@ -207,18 +207,18 @@
       
           <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>总结一个最近看的视频，出自 1 月英伟达的 Dynamo Day，主要包括两方面：2025年PD分离的推理和2026年未来推理的趋势。</p>
 <h2 id="2025年推理主线：PD分离"><a href="#2025年推理主线：PD分离" class="headerlink" title="2025年推理主线：PD分离"></a>2025年推理主线：PD分离</h2><p>目前LLM 推理的问题有以下两点：吞吐量(throughput)和延迟(latency)。<br>延迟通常两个更细的指标：首次 token 的时长(TTFT，time to first token)和每个 token 间的时长(TPOT，time per output token)。<br>这两个指标都是越快越好，这样输入prompt 后，立马就获得了响应。<br>个人理解LLM 推理应该还有一个成本问题。<br>“既要又要“不是做不到，只是用户不舍得花这么多钱。<br>因此在不同应用上可以有不同的服务等级目标(SLO,serve level object)，比如像 chatgpt，那么 TTFT 就需要很快，但是 TPOT 可以稍微慢一点；如果是论文总结，那么 TTFT 可以稍微慢一点，但是 TPOT 就要稍微快一点。<br>但是高吞吐量不等于高好吞吐量。</p>
-<h2 id="high-throughput-high-goodput"><a href="#high-throughput-high-goodput" class="headerlink" title="high throughput !&#x3D; high goodput"></a>high throughput !&#x3D; high goodput</h2><p>如图所示，一秒处理 10 个请求，算是高吞吐，但是满足 TTFT 和 TPOT 的只有 3 个，所以有效的请求很少。<br><img src="/img_the_future_of/1.png" alt="high throughput"></p>
+<h2 id="high-throughput-high-goodput"><a href="#high-throughput-high-goodput" class="headerlink" title="high throughput !&#x3D; high goodput"></a>high throughput !&#x3D; high goodput</h2><p>如图所示，一秒处理 10 个请求，算是高吞吐，但是满足 TTFT 和 TPOT 的只有 3 个，所以有效的请求很少。<br><img src="/images/1.png" alt="high throughput"></p>
 <p>2025年一个大的趋势就是 PD(prefill&#x2F;decode) 分离。prefill 和 decode 分别在不同的 GPU 上执行，先让 prefill worker 处理请求，然后将数据传输到 decode worker 处理。</p>
 <h2 id="continuous-batching-连续批处理"><a href="#continuous-batching-连续批处理" class="headerlink" title="continuous batching 连续批处理"></a>continuous batching 连续批处理</h2><p>在 PD 分离之前，最好用的技术是连续批处理，但是这会给prefill 和 decode 阶段带来一些干扰。</p>
-<p><img src="/img_the_future_of/2.png" alt="continuous batching cause interference"></p>
+<p><img src="/images/2.png" alt="continuous batching cause interference"></p>
 <p>我来解释一下这个图片的含义：左边是传统连续批处理，右边是 PD 分离。图中蓝色柱子表示 decode 阶段，绿色柱子表示 prefill 阶段。在左边的图中，在 R1 执行 decode 的时候接收到了 R2 的请求，为了攒一批数据，R1 必须停下来等 R2 把 prefill执行完之后，再一起执行 decode。这个过程就带来了图中白色矩形显示的资源浪费。PD 分离之后就不会有这个问题，因为有两张卡。</p>
 <p>图 3 就说明一件事，只要你有足够多的钱，TTFT 和 TPOT “既要又要“也是可以做到的。</p>
-<p><img src="/img_the_future_of/3.png" alt="meet slo"></p>
+<p><img src="/images/3.png" alt="meet slo"></p>
 <h2 id="机会-PD分离"><a href="#机会-PD分离" class="headerlink" title="机会: PD分离"></a>机会: PD分离</h2><ol>
 <li>消除prefill 和 decode 两个阶段存在的干扰。</li>
 <li>将SLO 的目标自然的切分成两个优化方向：prefill 优化TTFT，decode 优化 TPOT。选择合适的资源和并行策略。</li>
 </ol>
-<p><img src="/img_the_future_of/4.png" alt="better goodput"><br>PD 分离之后每个 GPU 的利用率可以带来两倍的提升。原来 1 张卡，每秒每张卡处理 1.6 个请求，现在两张卡，每秒每张卡处理 3.3 个请求。</p>
+<p><img src="/images/4.png" alt="better goodput"><br>PD 分离之后每个 GPU 的利用率可以带来两倍的提升。原来 1 张卡，每秒每张卡处理 1.6 个请求，现在两张卡，每秒每张卡处理 3.3 个请求。</p>
 <h2 id="核心问题-XPYD"><a href="#核心问题-XPYD" class="headerlink" title="核心问题: XPYD"></a>核心问题: XPYD</h2><p>p1-placement: 解决 X和Y在给定负载需求，最大化GPU 的好吞吐。<br>p2-communication: 最小化XP 和YD 之间的KV Cache 通信成本。</p>
 <p>一些不错的分离式推理系统：LMCache&#x2F;HiCache&#x2F;Dynamo&#x2F;Cachegen&#x2F;Deepseek-V3</p>
 <h2 id="2026-年-AI-推理的趋势"><a href="#2026-年-AI-推理的趋势" class="headerlink" title="2026 年 AI 推理的趋势"></a>2026 年 AI 推理的趋势</h2><ol>
@@ -226,7 +226,7 @@
 <li>扩散模型的流量正在急剧增长</li>
 </ol>
 <p>这两个太超前了，我没怎么看懂。放两张图给大家感受一下，就是说可以将原本的执行流程切成小块，然后以 CPU 流水线的形式执行，可以起到一定加速的效果。</p>
-<p><img src="/img_the_future_of/5.png" alt="better goodput"><br><img src="/img_the_future_of/6.png" alt="better goodput"><br>扩散模型方面，主要是视频生成，目前厂家生成视频的成本都很高，演讲嘉宾自己团队开源了一个 fastvideo似乎在尝试解决相关的问题，感兴趣的可以看一下。</p>
+<p><img src="/images/5.png" alt="better goodput"><br><img src="/images/6.png" alt="better goodput"><br>扩散模型方面，主要是视频生成，目前厂家生成视频的成本都很高，演讲嘉宾自己团队开源了一个 fastvideo似乎在尝试解决相关的问题，感兴趣的可以看一下。</p>
 <h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p><a target="_blank" rel="noopener" href="https://www.nvidia.com/en-us/on-demand/session/other25-dynamoday09/?playlistId=playList-e42aee58-4db9-4ce4-8a6f-c41d8e272d72">the future of ai inference</a></p>
 
       
