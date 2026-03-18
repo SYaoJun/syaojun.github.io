@@ -1,7 +1,7 @@
 ---
 title: The Future of AI Inference
 date: 2026-03-14 23:30:21
-tags: llm
+categories: llm
 ---
 ## 引言
 

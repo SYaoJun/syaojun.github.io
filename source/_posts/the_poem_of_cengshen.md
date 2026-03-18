@@ -1,7 +1,7 @@
 ---
-title: 岑参的诗
+title: The Poem of Ceng Shen
 date: 2026-02-03 20:23:05
-tags: [poem]
+categories: poem
 ---
 
 # 《初过陇山途中呈宇文判官》
