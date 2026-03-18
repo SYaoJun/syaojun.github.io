@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-1}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="引言总结一个最近看的视频，出自 1 月英伟达的 Dynamo Day，主要包括两方面：2025年PD分离的推理和2026年未来推理的趋势。 2025年推理主线：PD分离目前LLM 推理的问题有以下两点：吞吐量(throughput)和延迟(latency)。延迟通常两个更细的指标：首次 token 的时长(TTFT，time to first token)和每个 token 间的时长(TPOT，t">
+  <meta name="description" content="引言总结一个最近看的视频，出自 1 月英伟达的 Dynamo Day，主要包括两方面：2025年PD分离的推理和2026年未来推理的趋势。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="The Future of AI Inference">
 <meta property="og:url" content="http://example.com/2026/03/14/the-future-of-ai-inference/index.html">
 <meta property="og:site_name" content="yaojun">
-<meta property="og:description" content="引言总结一个最近看的视频，出自 1 月英伟达的 Dynamo Day，主要包括两方面：2025年PD分离的推理和2026年未来推理的趋势。 2025年推理主线：PD分离目前LLM 推理的问题有以下两点：吞吐量(throughput)和延迟(latency)。延迟通常两个更细的指标：首次 token 的时长(TTFT，time to first token)和每个 token 间的时长(TPOT，t">
+<meta property="og:description" content="引言总结一个最近看的视频，出自 1 月英伟达的 Dynamo Day，主要包括两方面：2025年PD分离的推理和2026年未来推理的趋势。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/1.png">
 <meta property="og:image" content="http://example.com/images/2.png">
@@ -34,7 +34,7 @@
 <meta property="og:image" content="http://example.com/images/5.png">
 <meta property="og:image" content="http://example.com/images/6.png">
 <meta property="article:published_time" content="2026-03-14T15:30:21.000Z">
-<meta property="article:modified_time" content="2026-03-14T16:58:33.750Z">
+<meta property="article:modified_time" content="2026-03-18T11:11:43.962Z">
 <meta property="article:author" content="yaojun">
 <meta property="article:tag" content="llm">
 <meta name="twitter:card" content="summary">
@@ -203,7 +203,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2026-03-15 00:58:33" itemprop="dateModified" datetime="2026-03-15T00:58:33+08:00">2026-03-15</time>
+                <time title="Modified: 2026-03-18 19:11:43" itemprop="dateModified" datetime="2026-03-18T19:11:43+08:00">2026-03-18</time>
               </span>
 
           
@@ -218,6 +218,7 @@
 
       
         <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>总结一个最近看的视频，出自 1 月英伟达的 Dynamo Day，主要包括两方面：2025年PD分离的推理和2026年未来推理的趋势。</p>
+<span id="more"></span>
 <h2 id="2025年推理主线：PD分离"><a href="#2025年推理主线：PD分离" class="headerlink" title="2025年推理主线：PD分离"></a>2025年推理主线：PD分离</h2><p>目前LLM 推理的问题有以下两点：吞吐量(throughput)和延迟(latency)。<br>延迟通常两个更细的指标：首次 token 的时长(TTFT，time to first token)和每个 token 间的时长(TPOT，time per output token)。<br>这两个指标都是越快越好，这样输入prompt 后，立马就获得了响应。<br>个人理解LLM 推理应该还有一个成本问题。<br>“既要又要“不是做不到，只是用户不舍得花这么多钱。<br>因此在不同应用上可以有不同的服务等级目标(SLO,serve level object)，比如像 chatgpt，那么 TTFT 就需要很快，但是 TPOT 可以稍微慢一点；如果是论文总结，那么 TTFT 可以稍微慢一点，但是 TPOT 就要稍微快一点。<br>但是高吞吐量不等于高好吞吐量。</p>
 <h2 id="high-throughput-high-goodput"><a href="#high-throughput-high-goodput" class="headerlink" title="high throughput !&#x3D; high goodput"></a>high throughput !&#x3D; high goodput</h2><p>如图所示，一秒处理 10 个请求，算是高吞吐，但是满足 TTFT 和 TPOT 的只有 3 个，所以有效的请求很少。<br><img src="/images/1.png" alt="high throughput"></p>
 <p>2025年一个大的趋势就是 PD(prefill&#x2F;decode) 分离。prefill 和 decode 分别在不同的 GPU 上执行，先让 prefill worker 处理请求，然后将数据传输到 decode worker 处理。</p>
