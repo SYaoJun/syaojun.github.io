@@ -6,6 +6,7 @@ tags: llm
 ## 引言
 
 总结一个最近看的视频，出自 1 月英伟达的 Dynamo Day，主要包括两方面：2025年PD分离的推理和2026年未来推理的趋势。
+<!-- more -->
 ## 2025年推理主线：PD分离
 目前LLM 推理的问题有以下两点：吞吐量(throughput)和延迟(latency)。
 延迟通常两个更细的指标：首次 token 的时长(TTFT，time to first token)和每个 token 间的时长(TPOT，time per output token)。
