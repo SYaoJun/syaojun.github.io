@@ -51,14 +51,7 @@ comments:
       order: -1
 
 gitalk:
-  enable: true
-  github_id: syaojun
-  repo: syaojun.github.io
-  client_id: "Ov23liuPFA5t0Euqqpfo"
-  client_secret: "8b07fc2c1ddc89f3419504198d2b1afb99a315fd"
-  admin_user: syaojun
-  language: zh-CN
-  distraction_free_mode: true
+  enable: false
 
 # 友情链接
 links_settings:
