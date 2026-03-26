@@ -1,20 +1,16 @@
 ---
-title: About me
+title: Yao Jun（姚军）
 date: 2026-02-03
 ---
-
-## Introduction
-Hi, my name is YaoJun.
-
 
 ## Hobby
 - Running
 - Badminton
+- Swimming
 
 ## Contact
-
-- qq: 940334249
-- wechat：hysteria00544
+- Email: libevent@yeah.net
+- WeChat: hysteria00544
 
 ## Resume
 

@@ -1,5 +1,5 @@
 ---
-title: 分类
+title: Categories
 date: 2026-02-03
 type: categories
 ---
