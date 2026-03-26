@@ -1,7 +1,7 @@
 ---
-title: when_I_start_running
+title: When I Start Running
 date: 2026-03-25 23:11:29
-tags: [diary, marathon]
+tags: diary, marathon
 ---
 
 I finished my first half marathon last weekend.
