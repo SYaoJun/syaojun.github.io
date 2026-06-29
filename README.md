@@ -5,4 +5,7 @@ git submodule update --init --recursive
 npm install
 npx hexo clean && npx hexo generate
 npx hexo deploy
+# run localhost
+npx hexo server
+hexo clean && hexo server
 ```
