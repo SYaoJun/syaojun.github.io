@@ -1,0 +1,30 @@
+// 语言切换器固定在右上角
+.header .languages {
+  position: fixed;
+  top: 12px;
+  right: 24px;
+  z-index: 999;
+  font-size: $font-size-small;
+  display: inline-block;
+
+  .lang-select-label {
+    color: $text-color;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    span {
+      margin: 0 4px;
+    }
+  }
+
+  .lang-select {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+}

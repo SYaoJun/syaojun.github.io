@@ -8,7 +8,9 @@ subtitle: ''
 description: ''
 keywords:
 author: yaojun
-language: en
+language: 
+  - en
+  - zh-CN
 timezone: ''
 
 # URL
@@ -28,6 +30,11 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
+
+# 多语言生成器配置 (hexo-generator-i18n)
+i18n:
+  type: [post]
+  generator: [archive, category, tag]
 skip_render:
 
 # Writing

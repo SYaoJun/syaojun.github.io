@@ -1,7 +1,8 @@
 ---
-title: The Future of AI Inference
+title: AI 推理的未来
 date: 2026-03-14 23:30:21
 categories: llm
+lang: zh-CN
 ---
 ## 引言
 

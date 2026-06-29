@@ -1,6 +1,7 @@
-# NexT 主题配置覆盖
-# 使用 Gemini 主题（类似参考站点）
 scheme: Gemini
+
+# 多语言切换
+language_switcher: true
 
 # 侧边栏配置
 sidebar:
@@ -69,6 +70,10 @@ menu:
   archives: /archives || fa fa-archive
   categories: /categories || fa fa-th
   about: /about || fa fa-user
+
+# 自定义文件注入
+custom_file_path:
+  style: source/_data/styles.styl
 
 # 开启 motion 动画
 motion:
