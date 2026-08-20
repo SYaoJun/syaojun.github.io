@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主页 | DB &amp; Systems</title>
+  <meta name="description" content="系统方向代码实战学习站：CMU 15-445、MIT 6.824、Stanford CS336 三门经典课程，讲座视频与项目讲解。">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+      </button>
+      <a class="site-title" href="index.html">DB &amp; Systems</a>
+    </div>
+  </header>
+
+  <div class="side-bar">
+    <nav aria-label="站点导航">
+      <div class="nav-section">
+        <p class="nav-section-title">课程</p>
+        <a class="nav-link" href="lectures.html">CMU 15-445 · 数据库</a>
+        <a class="nav-link" href="lectures-6824.html">MIT 6.824 · 分布式</a>
+        <a class="nav-link" href="lectures-cs336.html">CS336 · 大模型</a>
+      </div>
+      <div class="nav-section">
+        <p class="nav-section-title">实战</p>
+        <a class="nav-link" href="project-guide.html">项目讲解 · CMU 15-445</a>
+        <a class="nav-link" href="project-6824.html">项目讲解 · MIT 6.824</a>
+        <a class="nav-link" href="project-cs336.html">项目讲解 · CS336</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="main-content" id="main-content">
+    <div class="content-wrap">
+
+      <h1>DB &amp; Systems · 系统方向代码实战学习站</h1>
+      <p>本站围绕 <strong>代码实战</strong> 组织系统方向的经典公开课程，每门课一个栏目：<strong>讲座与视频</strong>（含 YouTube / Bilibili 跳转）、
+        <strong>项目讲解</strong>（按子标题拆解每个项目，附 Slides / Code / Video）。不追求泛泛地看，而是动手把每一个项目写出来。</p>
+
+      <h2 id="courses">课程总览</h2>
+      <div class="course-grid">
+
+        <div class="course-card">
+          <div class="course-head">
+            <h3>CMU 15-445</h3>
+            <span class="course-tag">数据库</span>
+            <span class="course-tag alt">C++17</span>
+          </div>
+          <p class="course-desc">Introduction to Database Systems · 用 Bustub 从零实现数据库内核：缓冲池、B+ 树索引、查询执行、并发控制。</p>
+          <p class="course-cost">费用：<b>免费</b></p>
+          <p class="course-links">
+            <a class="btn btn-sm" href="lectures.html">讲座与视频</a>
+            <a class="btn btn-sm btn-outline" href="project-guide.html">项目讲解</a>
+          </p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-head">
+            <h3>MIT 6.824</h3>
+            <span class="course-tag">分布式</span>
+            <span class="course-tag alt">Go</span>
+          </div>
+          <p class="course-desc">Distributed Systems · 4 个 Go 实验：MapReduce、Raft 共识、KV Server、分片 KV，理解分布式容错与一致性。</p>
+          <p class="course-cost">费用：<b>免费</b></p>
+          <p class="course-links">
+            <a class="btn btn-sm" href="lectures-6824.html">讲座与视频</a>
+          </p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-head">
+            <h3>CS336</h3>
+            <span class="course-tag">大模型</span>
+            <span class="course-tag alt">PyTorch</span>
+          </div>
+          <p class="course-desc">Language Modeling from Scratch · 从零手写大语言模型：分词、Transformer、GPU 内核、并行训练、数据管线与对齐。</p>
+          <p class="course-cost">费用：<b>课件免费</b>（训练需自购云 GPU）</p>
+          <p class="course-links">
+            <a class="btn btn-sm" href="lectures-cs336.html">讲座与视频</a>
+          </p>
+        </div>
+
+      </div>
+
+      <h2 id="cost">费用说明</h2>
+      <p>三门课程均来自各高校公开渠道，<strong>课程学费为 0</strong>。主要开销集中在个别课程的实验资源（如训练大模型需要自购云 GPU）。
+        明细如下：</p>
+      <table>
+        <thead>
+          <tr>
+            <th>课程</th>
+            <th>学费</th>
+            <th>课件 / 讲义</th>
+            <th>视频</th>
+            <th>项目 / 实验</th>
+            <th>额外开销</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CMU 15-445 · 数据库</td>
+            <td>免费公开</td>
+            <td>公开</td>
+            <td>YouTube / Bilibili</td>
+            <td>Bustub（C++17）</td>
+            <td>无</td>
+          </tr>
+          <tr>
+            <td>MIT 6.824 · 分布式</td>
+            <td>免费公开</td>
+            <td>公开</td>
+            <td>YouTube</td>
+            <td>Go · 4 个实验</td>
+            <td>无</td>
+          </tr>
+          <tr>
+            <td>CS336 · 大模型</td>
+            <td>免费公开</td>
+            <td>公开</td>
+            <td>一般不公开</td>
+            <td>PyTorch · A1–A5</td>
+            <td>云 GPU（按小时计费，可选 RunPod / Lambda 等）</td>
+          </tr>        </tbody>
+      </table>
+
+      <h2 id="path">推荐学习路径</h2>
+      <ol>
+        <li><strong>数据库内核</strong>：进入 <a href="lectures.html">CMU 15-445</a>，配合 <a href="project-guide.html">项目讲解</a> 完成 Bustub 的 5 个项目；</li>
+        <li><strong>分布式</strong>：做 <a href="lectures-6824.html">MIT 6.824</a>，Raft 实验是核心，理解共识与容错；</li>
+        <li><strong>大模型系统</strong>：学 <a href="lectures-cs336.html">Stanford CS336</a>，从零手写 LLM 的训练管线。</li>
+      </ol>
+
+      <h2 id="practice">项目讲解</h2>
+      <p>目前重点讲解 <strong>CMU 15-445</strong> 的 5 个项目（P0 C++ Primer → P4 并发控制），每个项目按子标题拆解，
+        配 Slides / Code / Video 链接，点击展开。</p>
+      <p>
+        <a class="btn" href="project-guide.html">进入项目讲解 →</a>
+      </p>
+
+      <div class="footer">
+        <p>本站为个人学习资源导航站，所有课程内容版权归其所属高校与作者所有。
+          © <span id="current-year">2026</span> DB &amp; Systems 实战学习站</p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

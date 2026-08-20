@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIT 6.824 · 分布式系统 | DB &amp; Systems</title>
+  <meta name="description" content="MIT 6.824/6.5840 分布式系统全部讲座列表：Raft、GFS、Spanner 等主题，讲义与视频链接。">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+      </button>
+      <a class="site-title" href="index.html">DB &amp; Systems</a>
+    </div>
+  </header>
+
+  <div class="side-bar">
+    <nav aria-label="站点导航">
+      <div class="nav-section">
+        <p class="nav-section-title">课程</p>
+        <a class="nav-link" href="lectures.html">CMU 15-445 · 数据库</a>
+        <a class="nav-link active" href="lectures-6824.html">MIT 6.824 · 分布式</a>
+        <a class="nav-link" href="lectures-cs336.html">CS336 · 大模型</a>
+      </div>
+      <div class="nav-section">
+        <p class="nav-section-title">实战</p>
+        <a class="nav-link" href="project-guide.html">项目讲解 · CMU 15-445</a>
+        <a class="nav-link" href="project-6824.html">项目讲解 · MIT 6.824</a>
+        <a class="nav-link" href="project-cs336.html">项目讲解 · CS336</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="main-content" id="main-content">
+    <div class="content-wrap">
+
+      <h1>MIT 6.824 · Distributed Systems</h1>
+      <p>麻省理工学院经典分布式系统课程（现编号 6.5840），主题涵盖 RPC、容错（Raft）、一致性、分布式事务、缓存一致性与点对点系统。
+        以 Go 语言完成 4 个实验（MapReduce → Raft → KV Server → Sharded KV）。</p>
+
+      <div class="info">
+        🔗 官方主页：
+        <a href="https://pdos.csail.mit.edu/6.5840/" target="_blank" rel="noopener">pdos.csail.mit.edu/6.5840</a>
+        · 下表 Slides / 视频链接为占位符，请自行粘贴。
+      </div>
+
+      <h2 id="lecture-list">讲座列表</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>主题</th>
+            <th>材料</th>
+            <th>视频</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>Introduction<br><span class="muted">课程引言与分布式系统概览</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>RPC and Threads<br><span class="muted">RPC 与线程</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>GFS<br><span class="muted">Google 文件系统</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Paxos<br><span class="muted">Paxos 共识算法</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Go Patterns<br><span class="muted">Go 编程模式（嘉宾：Russ Cox）</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>Fault Tolerance: Raft (1)<br><span class="muted">容错：Raft 选举与日志复制（一）</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>07</td>
+            <td>Fault Tolerance: Raft (2)<br><span class="muted">容错：Raft 持久化与快照（二）</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>08</td>
+            <td>Consistency and Linearizability<br><span class="muted">一致性与线性化</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>09</td>
+            <td>Zookeeper<br><span class="muted">ZooKeeper 协调服务</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Q&amp;A Lab 3A+B<br><span class="muted">实验 3A/3B 答疑</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Distributed Transactions<br><span class="muted">分布式事务</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Spanner<br><span class="muted">Google Spanner 全局分布式数据库</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Chain Replication<br><span class="muted">链式复制</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Optimistic Concurrency Control<br><span class="muted">乐观并发控制（FaRM）</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Verification of Distributed Systems<br><span class="muted">分布式系统验证（IronFleet）</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Cache Consistency: Memcached at Facebook<br><span class="muted">缓存一致性（Facebook Memcached）</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>AWS Lambda<br><span class="muted">Serverless 计算（嘉宾：Marc Brooker）</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Ray<br><span class="muted">Ray 分布式计算框架</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Fork Consistency, SUNDR<br><span class="muted">分叉一致性与 SUNDR</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Peer-to-peer: Bitcoin<br><span class="muted">点对点系统：比特币</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Byzantine Fault Tolerance<br><span class="muted">拜占庭容错（PBFT）</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Project Demos<br><span class="muted">项目演示</span></td>
+            <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+            <td><span class="video-links"><a class="official" href="#" target="_blank" rel="noopener" title="待补充">▶ 视频</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="note">
+        💡 <strong>实验：</strong>Lab 1 MapReduce · Lab 2 Raft · Lab 3 KV Server · Lab 4 Sharded KV。
+        视频可参考官方 YouTube 频道（MIT 6.824 历年视频公开）或 Bilibili 搬运合集。
+      </div>
+
+      <div class="footer">
+        <p>本站为个人学习资源导航站，所有课程内容版权归其所属高校与作者所有。
+          © <span id="current-year">2026</span> DB &amp; Systems 实战学习站</p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

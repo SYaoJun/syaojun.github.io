@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目讲解 · MIT 6.824 | DB &amp; Systems</title>
+  <meta name="description" content="MIT 6.824 分布式系统四个 Lab 的分步讲解：每个 Lab 包含多个子标题，附 Slides 与 Code 链接。">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+      </button>
+      <a class="site-title" href="index.html">DB &amp; Systems</a>
+    </div>
+  </header>
+
+  <div class="side-bar">
+    <nav aria-label="站点导航">
+      <div class="nav-section">
+        <p class="nav-section-title">课程</p>
+        <a class="nav-link" href="lectures.html">CMU 15-445 · 数据库</a>
+        <a class="nav-link" href="lectures-6824.html">MIT 6.824 · 分布式</a>
+        <a class="nav-link" href="lectures-cs336.html">CS336 · 大模型</a>
+      </div>
+      <div class="nav-section">
+        <p class="nav-section-title">实战</p>
+        <a class="nav-link" href="project-guide.html">项目讲解 · CMU 15-445</a>
+        <a class="nav-link active" href="project-6824.html">项目讲解 · MIT 6.824</a>
+        <a class="nav-link" href="project-cs336.html">项目讲解 · CS336</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="main-content" id="main-content">
+    <div class="content-wrap">
+
+      <h1>Project Guide · 项目讲解</h1>
+      <div class="info">
+        📌 本页对应 <strong>MIT 6.824 · Distributed Systems</strong>（Go），含 Lab 1–4。
+      </div>
+      <p>基于 <strong>6.824</strong>（Go）的 4 个 Lab 分步讲解。每个 Lab 默认收拢，点击标题展开，
+        内部按子标题逐节讲解，每节附 <strong>Slides</strong>（课件/文档）、<strong>Code</strong>（代码）与 <strong>Video</strong>（视频）链接。</p>
+
+      <div class="info">
+        🔗 表格中的链接均为占位符，点击 Lab 标题展开后，在 <code>href</code> 中粘贴对应地址即可
+        （Video 列可填飞书链接）。
+      </div>
+
+      <!-- ============================================================
+           Lab 1 · MapReduce
+           ============================================================ -->
+      <details class="pj" id="lab1">
+        <summary>
+          <span class="pj-name">Lab 1 · MapReduce</span>
+          <span class="pj-desc">实现单机 MapReduce 框架：Coordinator 调度与 Worker 执行。</span>
+        </summary>
+        <div class="pj-body">
+          <table>
+            <thead>
+              <tr><th>子标题</th><th>Slides</th><th>Code</th><th>Video</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>项目目标与代码结构<span class="muted">了解 Lab 1 要做什么、mr 包与 Coordinator 职责</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>环境搭建与测试<span class="muted">Go 环境 / go test 运行方式</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>Worker 与 RPC 通信<span class="muted">Worker 轮询 / Call 获取任务</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>Map / Reduce 执行<span class="muted">任务分发 / 中间文件 / 键值归并</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>故障容错与超时重试<span class="muted">Worker 崩溃 / 任务超时重新分配</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>测试与提交<span class="muted">go test / 正确性与容错用例</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <!-- ============================================================
+           Lab 2 · Raft
+           ============================================================ -->
+      <details class="pj" id="lab2">
+        <summary>
+          <span class="pj-name">Lab 2 · Raft</span>
+          <span class="pj-desc">实现 Raft 共识算法：选举、日志复制、持久化与快照。</span>
+        </summary>
+        <div class="pj-body">
+          <table>
+            <thead>
+              <tr><th>子标题</th><th>Slides</th><th>Code</th><th>Video</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>项目目标与共识框架<span class="muted">Raft 角色状态机 / 术语与任期</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>选举 Leader Election<span class="muted">超时选举 / 投票规则 / 任期更新</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>日志复制 Log Replication<span class="muted">AppendEntries / 一致性检查 / 提交推进</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>持久化 Persistence<span class="muted">persist / readPersist / 重启恢复</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>快照 Snapshot<span class="muted">InstallSnapshot / 日志截断 / 应用层状态</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>测试与提交<span class="muted">Test 2A–2D / 选举、复制、恢复与快照</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <!-- ============================================================
+           Lab 3 · Fault-tolerant KV Service (KVRaft)
+           ============================================================ -->
+      <details class="pj" id="lab3">
+        <summary>
+          <span class="pj-name">Lab 3 · Fault-tolerant KV Service</span>
+          <span class="pj-desc">基于 Raft 构建容错 KV 服务：客户端协议与状态机应用。</span>
+        </summary>
+        <div class="pj-body">
+          <table>
+            <thead>
+              <tr><th>子标题</th><th>Slides</th><th>Code</th><th>Video</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>项目目标与架构<span class="muted">Clerk 客户端 / KVServer / Raft 三者关系</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>Raft 服务封装<span class="muted">Start / ApplyCh / 提交通知</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>状态机与命令应用<span class="muted">Put / Append / Get 命令执行</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>线性一致性与去重<span class="muted">请求去重 / 操作 ID / 结果缓存</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>快照支持（可选）<span class="muted">状态机快照 / 日志压缩联动</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>测试与提交<span class="muted">Test 3A–3B / 容错与线性一致</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <!-- ============================================================
+           Lab 4 · Sharded KV Service
+           ============================================================ -->
+      <details class="pj" id="lab4">
+        <summary>
+          <span class="pj-name">Lab 4 · Sharded KV Service</span>
+          <span class="pj-desc">实现分片 KV 服务：配置管理、分片迁移与重新均衡。</span>
+        </summary>
+        <div class="pj-body">
+          <table>
+            <thead>
+              <tr><th>子标题</th><th>Slides</th><th>Code</th><th>Video</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>项目目标与分片架构<span class="muted">ShardMaster / Replica Groups / 分片分配</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>ShardMaster 配置服务<span class="muted">Join / Leave / Move / Query</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>分片迁移与重新配置<span class="muted">配置轮询 / 数据拉取 / 状态转移</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>垃圾回收与并发处理<span class="muted">分片删除 / 客户端重试 / 版本控制</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+              <tr>
+                <td>测试与提交<span class="muted">Test 4A–4B / 配置变更与容错</span></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Slides</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Code</a></td>
+                <td><a href="#" target="_blank" rel="noopener" title="待补充">Video</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+
+      <div class="footer">
+        <p>本站为个人学习资源导航站，所有课程内容版权归其所属高校与作者所有。
+          © <span id="current-year">2026</span> DB &amp; Systems 实战学习站</p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
