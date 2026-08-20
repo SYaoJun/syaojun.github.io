@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>关于课程 | DB 15-445</title>
-  <meta name="description" content="CMU 15-445/645 Introduction to Database Systems 课程介绍、讲师信息、课程大纲与 FAQ。">
+  <title>关于课程 | CMU 15-445 数据库系统 | DB &amp; Systems</title>
+  <meta name="description" content="CMU 15-445/645 数据库系统课程介绍、讲师信息、课程大纲与 FAQ。">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -15,23 +15,28 @@
       <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
       </button>
-      <a class="site-title" href="index.html">DB &amp; Systems</a>
+      <a class="site-title" href="index.html">
+        <svg class="site-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>
+        DB &amp; Systems
+      </a>
     </div>
   </header>
 
   <div class="side-bar">
     <nav aria-label="站点导航">
       <div class="nav-section">
-        <p class="nav-section-title">课程</p>
-        <a class="nav-link" href="lectures.html">CMU 15-445 · 数据库</a>
-        <a class="nav-link" href="lectures-6824.html">MIT 6.824 · 分布式</a>
-        <a class="nav-link" href="lectures-cs336.html">CS336 · 大模型</a>
-      </div>
-      <div class="nav-section">
-        <p class="nav-section-title">实战</p>
-        <a class="nav-link" href="project-guide.html">项目讲解 · CMU 15-445</a>
-        <a class="nav-link" href="project-6824.html">项目讲解 · MIT 6.824</a>
-        <a class="nav-link" href="project-cs336.html">项目讲解 · CS336</a>
+        <div class="nav-item nav-item-toggle">
+          <a class="nav-link" href="lectures.html">CMU 15-445 · 数据库</a>
+          <button class="nav-toggle" aria-expanded="true" aria-label="折叠菜单">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
+          </button>
+        </div>
+        <div class="nav-submenu nav-submenu-open">
+          <a class="nav-link" href="lectures-2022-fall.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2022秋</a>
+          <a class="nav-link" href="lectures-2023-spring.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2023春</a>
+          <a class="nav-link" href="lectures-2025-fall.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2025秋</a>
+          <a class="nav-link" href="lectures-2026-spring.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2026春</a>
+        </div>
       </div>
     </nav>
   </div>
@@ -71,7 +76,7 @@
 
       <h2>关于本站</h2>
       <p>本站是一个非官方的<strong>学习资源导航站</strong>，旨在帮助中文学习者更便捷地访问 CMU 15-445 的课程内容：
-        提供完整的课程日历、讲座视频入口（YouTube 官方 / Bilibili 中英双语）以及项目讲解。</p>
+        提供完整的课程日历、讲座视频入口（YouTube 官方 / 飞书文档）以及项目讲解。</p>
       <div class="info">
         ℹ️ 本站与卡内基梅隆大学无隶属关系。所有课程材料版权归 <a href="https://db.cs.cmu.edu/" target="_blank" rel="noopener">CMU</a> 所有，视频版权归其作者所有。
       </div>
@@ -80,15 +85,9 @@
       <h3>需要什么前置知识？</h3>
       <p>建议掌握 C++ 或至少一门系统级编程语言，了解基本数据结构（树、哈希表）和操作系统内存管理概念。</p>
       <h3>视频在哪里看？</h3>
-      <p>官方原版在 <a href="https://www.youtube.com/playlist?list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5" target="_blank" rel="noopener">YouTube</a>，
-        中英双语字幕版在 <a href="https://www.bilibili.com/video/BV1QUbv6tE1Q/" target="_blank" rel="noopener">Bilibili</a>，详见<a href="lectures.html">讲座与视频</a>页。</p>
+      <p>中英双语文档在 <a href="#" target="_blank" rel="noopener" title="待补充">飞书文档</a>，详见<a href="lectures.html">讲座与视频</a>页。</p>
       <h3>可以拿到作业和项目做吗？</h3>
-      <p>课程开放期间注册即可获得作业与项目；课程结束后部分材料仍公开。详见 <a href="lectures.html">讲座与视频</a> 与 <a href="project-guide.html">项目讲解</a> 页。</p>
-
-      <div class="footer">
-        <p>本站为个人学习资源导航站，所有课程内容版权归其所属高校与作者所有。
-          © <span id="current-year">2026</span> DB &amp; Systems 实战学习站</p>
-      </div>
+      <p>课程开放期间注册即可获得作业与项目；课程结束后部分材料仍公开。详见 <a href="lectures.html">讲座与视频</a> 页。</p>
 
     </div>
   </main>

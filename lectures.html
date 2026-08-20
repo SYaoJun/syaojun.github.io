@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>讲座与视频 | DB 15-445</title>
-  <meta name="description" content="CMU 15-445/645 全部 25 讲讲座列表，视频可跳转 YouTube 官方或 Bilibili 中英双语字幕版。">
+  <title>讲座与视频 | CMU 15-445 数据库系统 | DB &amp; Systems</title>
+  <meta name="description" content="CMU 15-445/645 数据库系统课程视频资源，按学期分类。">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -15,23 +15,28 @@
       <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
       </button>
-      <a class="site-title" href="index.html">DB &amp; Systems</a>
+      <a class="site-title" href="index.html">
+        <svg class="site-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>
+        DB &amp; Systems
+      </a>
     </div>
   </header>
 
   <div class="side-bar">
     <nav aria-label="站点导航">
       <div class="nav-section">
-        <p class="nav-section-title">课程</p>
-        <a class="nav-link active" href="lectures.html">CMU 15-445 · 数据库</a>
-        <a class="nav-link" href="lectures-6824.html">MIT 6.824 · 分布式</a>
-        <a class="nav-link" href="lectures-cs336.html">CS336 · 大模型</a>
-      </div>
-      <div class="nav-section">
-        <p class="nav-section-title">实战</p>
-        <a class="nav-link" href="project-guide.html">项目讲解 · CMU 15-445</a>
-        <a class="nav-link" href="project-6824.html">项目讲解 · MIT 6.824</a>
-        <a class="nav-link" href="project-cs336.html">项目讲解 · CS336</a>
+        <div class="nav-item nav-item-toggle">
+          <a class="nav-link active" href="lectures.html">CMU 15-445 · 数据库</a>
+          <button class="nav-toggle" aria-expanded="true" aria-label="折叠菜单">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
+          </button>
+        </div>
+        <div class="nav-submenu nav-submenu-open">
+          <a class="nav-link" href="lectures-2022-fall.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2022秋</a>
+          <a class="nav-link" href="lectures-2023-spring.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2023春</a>
+          <a class="nav-link" href="lectures-2025-fall.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2025秋</a>
+          <a class="nav-link" href="lectures-2026-spring.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2026春</a>
+        </div>
       </div>
     </nav>
   </div>
@@ -39,193 +44,66 @@
   <main class="main-content" id="main-content">
     <div class="content-wrap">
 
-      <h1>Lectures · 讲座与视频</h1>
-      <p>CMU 15-445/645（Fall 2025）共 25 讲。每讲提供：
-        <strong>📄 官方课件（Slides / Notes）</strong>、
-        <strong>▶ YouTube 官方视频</strong>、
-        <strong>Bilibili 中英双语字幕版</strong> 三种资源。</p>
+      <h1>讲座与视频</h1>
+      <p>CMU 15-445/645 数据库系统课程视频资源，按学期分类。</p>
 
       <div class="info">
         🔗 快速入口：
-        <a href="https://www.youtube.com/playlist?list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5" target="_blank" rel="noopener">YouTube 官方播放列表</a> ·
-        <a href="https://www.bilibili.com/video/BV1QUbv6tE1Q/" target="_blank" rel="noopener">Bilibili 全 25 讲合集</a> ·
+        <a href="#" target="_blank" rel="noopener" title="待补充">飞书文档合集</a> ·
         <a href="https://15445.courses.cs.cmu.edu/fall2025/" target="_blank" rel="noopener">CMU 官方课程主页</a>
       </div>
 
-      <h2 id="lecture-list">讲座列表</h2>
+      <h2 id="semester-list">学期列表</h2>
+      <div class="course-grid">
 
-      <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>主题</th>
-            <th>材料</th>
-            <th>视频</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>01</td>
-            <td>Relational Model &amp; Algebra<br><span class="muted">关系模型与代数</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/01-relationalmodel.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/01-relationalmodel.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=7NPIENPr-zk&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=1" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=1" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>02</td>
-            <td>Modern SQL<br><span class="muted">现代 SQL</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/02-modernsql.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/02-modernsql.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=O5gU9NQjCAs&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=2" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=2" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>03</td>
-            <td>Database Storage I<br><span class="muted">数据库存储 I：文件、页与元组</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/03-storage1.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/03-storage1.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=PRLXdIMJhOg&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=3" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=3" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>04</td>
-            <td>Memory Management<br><span class="muted">内存管理与缓冲池</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/04-bufferpool.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/04-bufferpool.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=8-2yv4z0VZc&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=4" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=4" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>05</td>
-            <td>Database Storage II<br><span class="muted">日志结构化存储（LSM 树）</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/05-storage2.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/05-storage2.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=2_sTdS4h-bY&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=5" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=5" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>06</td>
-            <td>Storage Models &amp; Compression<br><span class="muted">列存储与数据压缩</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/06-storage3.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/06-storage3.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=yWnToWrskXE&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=6" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=6" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>07</td>
-            <td>Hash Tables<br><span class="muted">数据库哈希表</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/07-hashtables.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/07-hashtables.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=nuNW8IfgPNU&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=7" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=7" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>08</td>
-            <td>Indexes &amp; Filters I<br><span class="muted">B+ 树：世界上最好的数据结构</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/08-indexes1.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/08-indexes1.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=u7ii_Lvm9rM&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=8" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=8" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>09</td>
-            <td>Indexes &amp; Filters II<br><span class="muted">向量/倒排索引、跳表与布隆过滤器</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/09-indexes2.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/09-indexes2.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=PjST2n7abAY&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=9" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=9" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>Index Concurrency Control<br><span class="muted">数据结构中的闩锁（Latching）</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/10-indexconcurrency.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/10-indexconcurrency.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=YgOvfXl6pss&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=10" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=10" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>11</td>
-            <td>Sorting &amp; Aggregations<br><span class="muted">排序与聚合算法</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/11-sorting.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/11-sorting.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=LzyKTpeIgts&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=11" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=11" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>12</td>
-            <td>Joins Algorithms<br><span class="muted">连接算法：哈希/排序归并/嵌套循环</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/12-joins.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/12-joins.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=YIdIaPopfpk&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=12" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=12" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>13</td>
-            <td>Query Execution I<br><span class="muted">查询执行 I（火山模型等）</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/13-queryexecution1.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/13-queryexecution1.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=E-UUd6cB57w&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=13" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=13" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>14</td>
-            <td>Query Execution II<br><span class="muted">并行查询引擎架构</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/14-queryexecution2.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/14-queryexecution2.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=Kzf1hGjtZOU&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=14" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=14" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>Query Planning &amp; Optimization I<br><span class="muted">查询优化器 I</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/15-optimization1.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/15-optimization1.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=b53huOGcsZ8&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=15" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=15" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>16</td>
-            <td>Query Planning &amp; Optimization II<br><span class="muted">查询优化 II</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/16-optimization2.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/16-optimization2.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=azTHRpzl10o&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=16" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=16" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>17</td>
-            <td>Concurrency Control Theory<br><span class="muted">并发控制理论</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/17-concurrencycontrol.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/17-concurrencycontrol.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=tMFAgvDViAI&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=17" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=17" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>18</td>
-            <td>Two-Phase Locking Concurrency Control<br><span class="muted">两阶段锁与事务</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/18-twophaselocking.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/18-twophaselocking.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=drStlhNbfHI&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=18" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=18" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>19</td>
-            <td>Timestamp Ordering Concurrency Control<br><span class="muted">时间戳排序并发控制</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/19-timestampordering.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/19-timestampordering.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=risHwKeWbBM&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=19" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=19" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>20</td>
-            <td>Multi-Version Concurrency Control<br><span class="muted">多版本并发控制（MVCC）</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/20-multiversioning.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/20-multiversioning.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=tUFha9-DuSk&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=20" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=20" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>21</td>
-            <td>Database Logging<br><span class="muted">预写日志与影子分页</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/21-logging.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/21-logging.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=CedEy54pe3g&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=21" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=21" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>22</td>
-            <td>Database Recovery<br><span class="muted">数据库崩溃恢复</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/22-recovery.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/22-recovery.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=X2jc4qalNy0&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=22" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=22" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>23</td>
-            <td>Distributed DB Systems I<br><span class="muted">分布式数据库系统 I</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/23-distributed1.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/23-distributed1.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=IFLQBWY6dlE&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=23" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=23" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>24</td>
-            <td>Distributed DB Systems II<br><span class="muted">分布式数据库系统 II</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/24-distributed2.pdf" target="_blank" rel="noopener">Slides</a> · <a href="https://15445.courses.cs.cmu.edu/fall2025/notes/24-distributed2.pdf" target="_blank" rel="noopener">Notes</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=pQh5fka3FC0&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=24" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=24" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-          <tr>
-            <td>25</td>
-            <td>Final Review &amp; Systems Potpourri<br><span class="muted">期末复习与系统大杂烩</span></td>
-            <td><a href="https://15445.courses.cs.cmu.edu/fall2025/slides/25-potpourri.pdf" target="_blank" rel="noopener">Slides</a></td>
-            <td><span class="video-links"><a class="yt" href="https://www.youtube.com/watch?v=qiVUf9X6ItM&amp;list=PLSE8ODhjZXjYMAgsGH-GtY5rJYZ6zjsd5&amp;index=25" target="_blank" rel="noopener">▶ YouTube</a><a class="bili" href="https://www.bilibili.com/video/BV1QUbv6tE1Q/?p=25" target="_blank" rel="noopener">B站 双语</a></span></td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="course-card">
+          <div class="course-head">
+            <h3>2022秋</h3>
+            <span class="course-tag">数据库</span>
+            <span class="course-tag alt">Fall 2022</span>
+          </div>
+          <p class="course-desc">CMU 15-445/645 Fall 2022 学期课程。</p>
+          <p class="course-links">
+            <a class="btn btn-sm" href="lectures-2022-fall.html">查看课程 →</a>
+          </p>
+        </div>
 
-      <div class="note">
-        💡 <strong>说明：</strong>Bilibili 合集分 P 与讲座编号一一对应（第 N 讲 = <code>?p=N</code>）。
-        若个别分 P 顺序有偏差，可到<a href="https://www.bilibili.com/video/BV1QUbv6tE1Q/" target="_blank" rel="noopener">合集主页</a>切换。
-        YouTube 视频均来自 CMU 官方频道 <a href="https://www.youtube.com/@CMUDatabaseGroup" target="_blank" rel="noopener">CMU Database Group</a>。
-      </div>
+        <div class="course-card">
+          <div class="course-head">
+            <h3>2023春</h3>
+            <span class="course-tag">数据库</span>
+            <span class="course-tag alt">Spring 2023</span>
+          </div>
+          <p class="course-desc">CMU 15-445/645 Spring 2023 学期课程。</p>
+          <p class="course-links">
+            <a class="btn btn-sm" href="lectures-2023-spring.html">查看课程 →</a>
+          </p>
+        </div>
 
-      <div class="footer">
-        <p>本站为个人学习资源导航站，所有课程内容版权归其所属高校与作者所有。
-          © <span id="current-year">2026</span> DB &amp; Systems 实战学习站</p>
+        <div class="course-card">
+          <div class="course-head">
+            <h3>2025秋</h3>
+            <span class="course-tag">数据库</span>
+            <span class="course-tag alt">Fall 2025</span>
+          </div>
+          <p class="course-desc">CMU 15-445/645 Fall 2025 学期课程，共 25 讲。</p>
+          <p class="course-links">
+            <a class="btn btn-sm" href="lectures-2025-fall.html">查看课程 →</a>
+          </p>
+        </div>
+
+        <div class="course-card">
+          <div class="course-head">
+            <h3>2026春</h3>
+            <span class="course-tag">数据库</span>
+            <span class="course-tag alt">Spring 2026</span>
+          </div>
+          <p class="course-desc">CMU 15-445/645 Spring 2026 学期课程。</p>
+          <p class="course-links">
+            <a class="btn btn-sm" href="lectures-2026-spring.html">查看课程 →</a>
+          </p>
+        </div>
+
       </div>
 
     </div>
