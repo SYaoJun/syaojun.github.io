@@ -3,6 +3,7 @@
   en: Fall 2022
   url: /lectures-2022-fall.html
   course_url: https://15445.courses.cs.cmu.edu/fall2022/
+  course: cmu15445
   desc: CMU 15-445/645 Fall 2022 学期课程。
 
 - slug: 2023-spring
@@ -10,6 +11,7 @@
   en: Spring 2023
   url: /lectures-2023-spring.html
   course_url: https://15445.courses.cs.cmu.edu/spring2023/
+  course: cmu15445
   desc: CMU 15-445/645 Spring 2023 学期课程。
 
 - slug: 2025-fall
@@ -17,6 +19,7 @@
   en: Fall 2025
   url: /lectures-2025-fall.html
   course_url: https://15445.courses.cs.cmu.edu/fall2025/
+  course: cmu15445
   desc: CMU 15-445/645 Fall 2025 学期课程，共 25 讲。
 
 - slug: 2026-spring
@@ -24,4 +27,13 @@
   en: Spring 2026
   url: /lectures-2026-spring.html
   course_url: https://15445.courses.cs.cmu.edu/spring2026/
+  course: cmu15445
   desc: CMU 15-445/645 Spring 2026 学期课程。
+
+- slug: uq-2026-s1
+  name: 2026S1
+  en: Semester 1 2026
+  url: /csse2310-2026-s1.html
+  course_url: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE2310
+  course: uq-csse2310
+  desc: UQ CSSE2310 计算机系统原理与编程（2026 第一学期）课程。

@@ -4,6 +4,15 @@ layout: default
 {% assign sem = site.data.semesters | where: "slug", page.slug | first %}
 {% assign semester_lectures = site.data.lectures | where: "slug", page.slug | first %}
 
+{% if sem.course == 'uq-csse2310' %}
+<h1>{{ sem.name }} · UQ CSSE2310 计算机系统原理与编程</h1>
+<p>{{ sem.desc }}</p>
+
+<div class="info">
+  🔗 快速入口：
+  <a href="{{ sem.course_url }}" target="_blank" rel="noopener">UQ 官方课程主页</a>
+</div>
+{% else %}
 <h1>{{ sem.name }} · CMU 15-445 数据库系统</h1>
 <p>{{ sem.desc }}</p>
 
@@ -11,9 +20,13 @@ layout: default
   🔗 快速入口：
   <a href="{{ sem.course_url }}" target="_blank" rel="noopener">CMU 官方课程主页</a>
 </div>
+{% endif %}
 
 <h2 id="lecture-list">讲座列表</h2>
 
+{% if semester_lectures == nil or semester_lectures.items.size == 0 %}
+<p>视频与讲义待补充。</p>
+{% else %}
 <table>
   <thead>
     <tr>
@@ -42,3 +55,4 @@ layout: default
     {% endfor %}
   </tbody>
 </table>
+{% endif %}
