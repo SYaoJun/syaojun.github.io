@@ -1,70 +1,76 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>主页 | 个人简介 | DB &amp; Systems</title>
-  <meta name="description" content="个人简介与学习资源导航。">
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">跳到主要内容</a>
+---
+layout: page
+home: true
+title: 主页 | 个人简介
+description: 个人简介与学习资源导航。
+---
 
-  <header class="site-header">
-    <div class="header-inner">
-      <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
-      </button>
-      <a class="site-title" href="index.html">
-        <svg class="site-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>
-        DB &amp; Systems
-      </a>
+<div class="profile">
+  <div class="profile-text">
+    <h1 class="profile-name">
+      Hi, I'm <span class="profile-name-accent">姚军</span>
+    </h1>
+
+    <p class="profile-bio">
+      我是姚军（<span class="profile-highlight">数据库 &amp; 大模型系统</span>方向的开发者）。 从2021年开始在网络上分享技术文章和视频，目前已有<span class="profile-highlight">14k</span>的关注者。技术是动态变化的，而我希望通过分享和交流，可以帮助更多的人了解和学习前沿技术。
+    </p>
+
+    <div class="profile-gap" aria-hidden="true"></div>
+
+    <div class="profile-tags">
+      <span class="profile-tag">⭐ Apache graphar committer</span>
+      <span class="profile-tag">📚 C/C++/Pytorch</span>
+      <span class="profile-tag">🏃 马拉松 · 羽毛球 · 乒乓球</span>
     </div>
-  </header>
+    <p class="profile-bio">
+      <span class="profile-highlight">技术路线</span>：企业后台 → 数据库内核 → 图数据库 → 地图引擎
+    </p>
 
-  <div class="side-bar">
-    <nav aria-label="站点导航">
-      <div class="nav-section">
-        <div class="nav-item nav-item-toggle">
-          <a class="nav-link" href="lectures.html">CMU 15-445 · 数据库</a>
-          <button class="nav-toggle" aria-expanded="true" aria-label="折叠菜单">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
-          </button>
-        </div>
-        <div class="nav-submenu nav-submenu-open">
-          <a class="nav-link" href="lectures-2022-fall.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2022秋</a>
-          <a class="nav-link" href="lectures-2023-spring.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2023春</a>
-          <a class="nav-link" href="lectures-2025-fall.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2025秋</a>
-          <a class="nav-link" href="lectures-2026-spring.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2026春</a>
-        </div>
-      </div>
-    </nav>
+    <p class="profile-bio">
+     
+      <span class="profile-highlight"> 教授课程</span>：
+      <a class="profile-course" href="https://15445.courses.cs.cmu.edu/" target="_blank" rel="noopener">CMU 15-445</a>
+      ·
+      <a class="profile-course" href="https://pdos.csail.mit.edu/6.824/" target="_blank" rel="noopener">MIT 6.824</a>
+      ·
+      <a class="profile-course" href="https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE2310" target="_blank" rel="noopener">UQ CSSE2310</a>
+      <!-- ·
+      <a class="profile-course" href="https://cs336.stanford.edu/" target="_blank" rel="noopener">CS 336</a> -->
+    </p>
+
   </div>
 
-  <main class="main-content" id="main-content">
-    <div class="content-wrap">
+  <div class="profile-photo">
+    <img src="{{ '/assets/head.jpg' | relative_url }}" alt="姚军的头像" loading="lazy">
+  </div>
+</div>
 
-      <div class="profile">
-        <div class="profile-avatar" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
-        </div>
-        <h1 class="profile-name">姚军</h1>
-        <p class="profile-role">数据库系统学习者 · 个人开发者</p>
-        <p class="profile-bio">
-          专注于数据库内核与分布式系统方向，
-          正在系统学习 CMU 15-445 并动手实现 Bustub。工作学习之余，
-          喜欢运动：羽毛球、乒乓球、马拉松。
-        </p>
-
-        <div class="profile-links">
-          <a class="btn btn-sm" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn-sm btn-outline" href="lectures.html">课程导航</a>
-        </div>
+<!-- 公众号 / Bilibili 联系方式 -->
+<div class="contact-cards">
+  <div class="contact-card">
+    <div class="contact-card-main">
+      <span class="contact-icon contact-icon-wechat" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M8.5 7.5C5 7.5 2 9.7 2 12.5c0 1.5.8 2.9 2.2 3.9l-.5 1.6 1.9-1c.6.2 1.3.3 2 .3.3 0 .5 0 .8-.1-.2-.5-.2-1-.2-1.5 0-2.8 2.6-4.9 5.8-4.9h.5c-.4-1.7-2.2-3.3-6-3.3zm-3 1.8c.4 0 .8.4.8.8s-.4.8-.8.8-.8-.4-.8-.8.4-.8.8-.8zm5 0c.4 0 .8.4.8.8s-.4.8-.8.8-.8-.4-.8-.8.4-.8.8-.8zM15 12c-3 0-5.5 1.9-5.5 4.4 0 2.4 2.4 4.4 5.5 4.4.7 0 1.3-.1 1.9-.3l1.6.8-.4-1.4c1.3-.8 2-2 2-3.5 0-2.4-2.5-4.4-5.1-4.4zm-2 1.7c.3 0 .6.3.6.6s-.3.6-.6.6-.6-.3-.6-.6.3-.6.6-.6zm4 0c.3 0 .6.3.6.6s-.3.6-.6.6-.6-.3-.6-.6.3-.6.6-.6z"/></svg>
+      </span>
+      <div class="contact-info">
+        <h3 class="contact-title">公众号</h3>
+        <p class="contact-sub">我不是匠人</p>
       </div>
-
     </div>
-  </main>
+    <div class="contact-qr">
+      <img src="{{ '/assets/images/qrcode.jpg' | relative_url }}" alt="公众号二维码" loading="lazy">
+    </div>
+  </div>
 
-  <script src="assets/main.js"></script>
-</body>
-</html>
+  <a class="contact-card contact-card-link" href="https://space.bilibili.com/26194591" target="_blank" rel="noopener">
+    <div class="contact-card-main">
+      <span class="contact-icon contact-icon-bili" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M17.8 4l-1.6 2H7.8L6.2 4 4.6 5.2 6 7H4c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2h-2l1.4-1.8L17.8 4zM4 9h16v9H4V9zm4 3v3h2v-3H8zm6 0v3h2v-3h-2z"/></svg>
+      </span>
+      <div class="contact-info">
+        <h3 class="contact-title">Bilibili</h3>
+        <p class="contact-sub">@我不是匠人 https://space.bilibili.com/30639161</p>
+      </div>
+    </div>
+  </a>
+</div>

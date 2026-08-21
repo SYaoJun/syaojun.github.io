@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "zh-CN" }}">
+<head>
+  {% include head.html %}
+</head>
+<body{% if page.home %} class="home-page"{% endif %}>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+  {% include header.html %}
+
+  {% include sidebar.html %}
+
+  <main class="main-content" id="main-content">
+    <div class="content-wrap">
+      {{ content }}
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/main.js' | relative_url }}"></script>
+</body>
+</html>

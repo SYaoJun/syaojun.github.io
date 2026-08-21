@@ -1,0 +1,36 @@
+# 站点配置
+title: DB & LLM Systems
+author: 姚军
+description: 个人学习资源导航站，整理 CMU 15-445 数据库系统课程资料，按学期分类存放讲座与视频入口。
+lang: zh-CN
+
+# 若部署到 GitHub Pages 项目页（如 username.github.io/dbb/），把 baseurl 改为 "/dbb"
+baseurl: ""
+url: ""
+
+# Markdown 渲染：Jekyll 3.x 使用 kramdown + GFM（依赖 kramdown-parser-gfm gem）
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# 学期集合：_semesters/ 下每个文件自动生成一个页面
+collections:
+  semesters:
+    output: true
+
+# 默认 Front Matter
+defaults:
+  - scope:
+      path: "_semesters"
+      type: semesters
+    values:
+      layout: semester
+
+# 构建输出
+destination: _site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - .codebuddy

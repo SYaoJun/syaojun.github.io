@@ -1,0 +1,19 @@
+<div class="side-bar">
+  <nav aria-label="站点导航">
+    <div class="nav-section">
+      <div class="nav-item nav-item-toggle">
+        <a class="nav-link{% if page.url == '/lectures.html' %} active{% endif %}" href="{{ '/lectures.html' | relative_url }}">CMU 15-445 · 数据库</a>
+        <button class="nav-toggle" aria-expanded="true" aria-label="折叠菜单">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
+        </button>
+      </div>
+      <div class="nav-submenu nav-submenu-open">
+        {% for s in site.data.semesters %}
+        <a class="nav-link{% if page.url == s.url %} active{% endif %}" href="{{ s.url | relative_url }}">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>{{ s.name }}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </nav>
+</div>

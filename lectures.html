@@ -1,114 +1,31 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>讲座与视频 | CMU 15-445 数据库系统 | DB &amp; Systems</title>
-  <meta name="description" content="CMU 15-445/645 数据库系统课程视频资源，按学期分类。">
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-  <a class="skip-link" href="#main-content">跳到主要内容</a>
+---
+layout: page
+title: 讲座与视频 | CMU 15-445 数据库系统
+description: CMU 15-445/645 数据库系统课程视频资源，按学期分类。
+---
 
-  <header class="site-header">
-    <div class="header-inner">
-      <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
-      </button>
-      <a class="site-title" href="index.html">
-        <svg class="site-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>
-        DB &amp; Systems
-      </a>
+<h1>讲座与视频</h1>
+<p>CMU 15-445/645 数据库系统课程视频资源，按学期分类。</p>
+
+<div class="info">
+  🔗 快速入口：
+  <a href="#" target="_blank" rel="noopener" title="待补充">飞书文档合集</a> ·
+  <a href="https://15445.courses.cs.cmu.edu/fall2025/" target="_blank" rel="noopener">CMU 官方课程主页</a>
+</div>
+
+<h2 id="semester-list">学期列表</h2>
+<div class="course-grid">
+  {% for s in site.data.semesters %}
+  <div class="course-card">
+    <div class="course-head">
+      <h3>{{ s.name }}</h3>
+      <span class="course-tag">数据库</span>
+      <span class="course-tag alt">{{ s.en }}</span>
     </div>
-  </header>
-
-  <div class="side-bar">
-    <nav aria-label="站点导航">
-      <div class="nav-section">
-        <div class="nav-item nav-item-toggle">
-          <a class="nav-link active" href="lectures.html">CMU 15-445 · 数据库</a>
-          <button class="nav-toggle" aria-expanded="true" aria-label="折叠菜单">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
-          </button>
-        </div>
-        <div class="nav-submenu nav-submenu-open">
-          <a class="nav-link" href="lectures-2022-fall.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2022秋</a>
-          <a class="nav-link" href="lectures-2023-spring.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2023春</a>
-          <a class="nav-link" href="lectures-2025-fall.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2025秋</a>
-          <a class="nav-link" href="lectures-2026-spring.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>2026春</a>
-        </div>
-      </div>
-    </nav>
+    <p class="course-desc">{{ s.desc }}</p>
+    <p class="course-links">
+      <a class="btn btn-sm" href="{{ s.url | relative_url }}">查看课程 →</a>
+    </p>
   </div>
-
-  <main class="main-content" id="main-content">
-    <div class="content-wrap">
-
-      <h1>讲座与视频</h1>
-      <p>CMU 15-445/645 数据库系统课程视频资源，按学期分类。</p>
-
-      <div class="info">
-        🔗 快速入口：
-        <a href="#" target="_blank" rel="noopener" title="待补充">飞书文档合集</a> ·
-        <a href="https://15445.courses.cs.cmu.edu/fall2025/" target="_blank" rel="noopener">CMU 官方课程主页</a>
-      </div>
-
-      <h2 id="semester-list">学期列表</h2>
-      <div class="course-grid">
-
-        <div class="course-card">
-          <div class="course-head">
-            <h3>2022秋</h3>
-            <span class="course-tag">数据库</span>
-            <span class="course-tag alt">Fall 2022</span>
-          </div>
-          <p class="course-desc">CMU 15-445/645 Fall 2022 学期课程。</p>
-          <p class="course-links">
-            <a class="btn btn-sm" href="lectures-2022-fall.html">查看课程 →</a>
-          </p>
-        </div>
-
-        <div class="course-card">
-          <div class="course-head">
-            <h3>2023春</h3>
-            <span class="course-tag">数据库</span>
-            <span class="course-tag alt">Spring 2023</span>
-          </div>
-          <p class="course-desc">CMU 15-445/645 Spring 2023 学期课程。</p>
-          <p class="course-links">
-            <a class="btn btn-sm" href="lectures-2023-spring.html">查看课程 →</a>
-          </p>
-        </div>
-
-        <div class="course-card">
-          <div class="course-head">
-            <h3>2025秋</h3>
-            <span class="course-tag">数据库</span>
-            <span class="course-tag alt">Fall 2025</span>
-          </div>
-          <p class="course-desc">CMU 15-445/645 Fall 2025 学期课程，共 25 讲。</p>
-          <p class="course-links">
-            <a class="btn btn-sm" href="lectures-2025-fall.html">查看课程 →</a>
-          </p>
-        </div>
-
-        <div class="course-card">
-          <div class="course-head">
-            <h3>2026春</h3>
-            <span class="course-tag">数据库</span>
-            <span class="course-tag alt">Spring 2026</span>
-          </div>
-          <p class="course-desc">CMU 15-445/645 Spring 2026 学期课程。</p>
-          <p class="course-links">
-            <a class="btn btn-sm" href="lectures-2026-spring.html">查看课程 →</a>
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </main>
-
-  <script src="assets/main.js"></script>
-</body>
-</html>
+  {% endfor %}
+</div>
