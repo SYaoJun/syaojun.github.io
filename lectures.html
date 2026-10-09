@@ -1,31 +1,30 @@
 ---
 layout: page
-title: 姚军的课程
-description: CMU 15-445/645 数据库系统课程视频资源，按学期分类。
+title: Yao Jun's Courses
+description: CMU 15-445/645 Database Systems course video resources, organized by semester.
 show_sidebar: true
 ---
 
-<h1>课程</h1>
-<p>CMU 15-445/645 数据库系统课程视频资源，按学期分类。</p>
+<h1>Courses</h1>
+<p>CMU 15-445/645 Database Systems course video resources, organized by semester.</p>
 
 <div class="info">
-  🔗 快速入口：
-  <a href="#" target="_blank" rel="noopener" title="待补充">飞书文档合集</a> ·
-  <a href="https://15445.courses.cs.cmu.edu/fall2025/" target="_blank" rel="noopener">CMU 官方课程主页</a>
+  &#x1F517; Quick Links:
+  <a href="#" target="_blank" rel="noopener" title="TBD">Feishu Docs</a> &middot;
+  <a href="https://15445.courses.cs.cmu.edu/fall2025/" target="_blank" rel="noopener">CMU Official Course Page</a>
 </div>
 
-<h2 id="semester-list">学期列表</h2>
+<h2 id="semester-list">Semesters</h2>
 <div class="course-grid">
   {% for s in site.data.semesters %}
   <div class="course-card">
     <div class="course-head">
-      <h3>{{ s.name }}</h3>
-      <span class="course-tag">数据库</span>
-      <span class="course-tag alt">{{ s.en }}</span>
+      <h3>{{ s.en }}</h3>
+      <span class="course-tag">Database</span>
     </div>
-    <p class="course-desc">{{ s.desc }}</p>
+    <p class="course-desc">{{ s.en_desc }}</p>
     <p class="course-links">
-      <a class="btn btn-sm" href="{{ s.url | relative_url }}">查看课程 →</a>
+      <a class="btn btn-sm" href="{{ s.url | relative_url }}">View Course &rarr;</a>
     </p>
   </div>
   {% endfor %}

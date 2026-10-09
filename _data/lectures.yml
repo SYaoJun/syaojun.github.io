@@ -1,46 +1,46 @@
-# 各学期讲座列表。
-# 每条可含可选字段 video: { label, url }；无 video 时渲染为待补充 TODO。
+# Lecture list per semester.
+# Each item may have an optional video: { label, url }; without video, renders as TBD.
 - slug: 2022-fall
   items:
     - num: 01
-      topic: 关系模型与代数
+      topic: "Relational Model & Algebra"
     - num: 02
-      topic: 现代 SQL
+      topic: Modern SQL
     - num: 03
-      topic: 数据库存储 I：文件、页与元组
+      topic: "Database Storage I: Files, Pages & Tuples"
     - num: 04
-      topic: 内存管理与缓冲池
+      topic: "Memory Management & Buffer Pool"
     - num: 05
-      topic: 日志结构化存储（LSM 树）
+      topic: Log-Structured Storage (LSM Trees)
 
 - slug: 2023-spring
   items:
     - num: 01
-      topic: 关系模型与代数
+      topic: "Relational Model & Algebra"
       video:
-        label: 飞书文档
+        label: Feishu Doc
         url: "#"
     - num: 02
-      topic: 现代 SQL
+      topic: Modern SQL
       video:
-        label: 飞书文档
+        label: Feishu Doc
         url: "#"
     - num: 03
-      topic: 数据库存储 I：文件、页与元组
+      topic: "Database Storage I: Files, Pages & Tuples"
       video:
-        label: 飞书文档
+        label: Feishu Doc
         url: "#"
     - num: 04
-      topic: 内存管理与缓冲池
+      topic: "Memory Management & Buffer Pool"
       video:
-        label: 飞书文档
+        label: Feishu Doc
         url: "#"
     - num: 05
-      topic: 日志结构化存储（LSM 树）
+      topic: Log-Structured Storage (LSM Trees)
       video:
-        label: 飞书文档
+        label: Feishu Doc
         url: "#"
 
-# UQ CSSE2310 2026 第一学期，视频与讲义待补充
+# UQ CSSE2310 Semester 1 2026, videos and notes TBD
 - slug: uq-2026-s1
   items: []

@@ -1,24 +1,24 @@
-# 站点配置
+# Site configuration
 title: LLM
-author: 姚军
-description: 个人学习资源导航站，整理 CMU 15-445 数据库系统课程资料，按学期分类存放讲座与视频入口。
-lang: zh-CN
+author: Yao Jun
+description: Personal learning resource hub, organizing CMU 15-445 Database Systems course materials by semester.
+lang: en
 
-# 若部署到 GitHub Pages 项目页（如 username.github.io/dbb/），把 baseurl 改为 "/dbb"
+# If deploying to GitHub Pages project page (e.g. username.github.io/dbb/), change baseurl to "/dbb"
 baseurl: ""
 url: ""
 
-# Markdown 渲染：Jekyll 3.x 使用 kramdown + GFM（依赖 kramdown-parser-gfm gem）
+# Markdown rendering: Jekyll 3.x uses kramdown + GFM (requires kramdown-parser-gfm gem)
 markdown: kramdown
 kramdown:
   input: GFM
 
-# 学期集合：_semesters/ 下每个文件自动生成一个页面
+# Semester collection: each file under _semesters/ auto-generates a page
 collections:
   semesters:
     output: true
 
-# 默认 Front Matter
+# Default Front Matter
 defaults:
   - scope:
       path: "_semesters"
@@ -26,7 +26,7 @@ defaults:
     values:
       layout: semester
 
-# 构建输出
+# Build output
 destination: _site
 exclude:
   - README.md
