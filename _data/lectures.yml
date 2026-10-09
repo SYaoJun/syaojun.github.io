@@ -41,32 +41,6 @@
         label: 飞书文档
         url: "#"
 
-- slug: 2025-fall
-  items:
-    - num: 01
-      topic: 关系模型与代数
-    - num: 02
-      topic: 现代 SQL
-    - num: 03
-      topic: 数据库存储 I：文件、页与元组
-    - num: 04
-      topic: 内存管理与缓冲池
-    - num: 05
-      topic: 日志结构化存储（LSM 树）
-
-- slug: 2026-spring
-  items:
-    - num: 01
-      topic: 关系模型与代数
-    - num: 02
-      topic: 现代 SQL
-    - num: 03
-      topic: 数据库存储 I：文件、页与元组
-    - num: 04
-      topic: 内存管理与缓冲池
-    - num: 05
-      topic: 日志结构化存储（LSM 树）
-
 # UQ CSSE2310 2026 第一学期，视频与讲义待补充
 - slug: uq-2026-s1
   items: []

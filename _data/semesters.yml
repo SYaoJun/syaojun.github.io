@@ -14,22 +14,6 @@
   course: cmu15445
   desc: CMU 15-445/645 Spring 2023 学期课程。
 
-- slug: 2025-fall
-  name: 2025秋
-  en: Fall 2025
-  url: /lectures-2025-fall.html
-  course_url: https://15445.courses.cs.cmu.edu/fall2025/
-  course: cmu15445
-  desc: CMU 15-445/645 Fall 2025 学期课程，共 25 讲。
-
-- slug: 2026-spring
-  name: 2026春
-  en: Spring 2026
-  url: /lectures-2026-spring.html
-  course_url: https://15445.courses.cs.cmu.edu/spring2026/
-  course: cmu15445
-  desc: CMU 15-445/645 Spring 2026 学期课程。
-
 - slug: uq-2026-s1
   name: 2026S1
   en: Semester 1 2026
