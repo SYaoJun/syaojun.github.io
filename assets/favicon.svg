@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4a8bff"/>
+      <stop offset="1" stop-color="#1d4fc4"/>
+    </linearGradient>
+  </defs>
+  <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="url(#bg)"/>
+  <!-- 数据库圆柱 -->
+  <path d="M8 10.5 A8 3.2 0 0 0 24 10.5 V22.5 A8 3.2 0 0 1 8 22.5 Z" fill="#ffffff"/>
+  <path d="M8 10.5 A8 3.2 0 0 0 24 10.5 A8 3.2 0 0 1 8 10.5 Z" fill="#cfe0ff"/>
+</svg>

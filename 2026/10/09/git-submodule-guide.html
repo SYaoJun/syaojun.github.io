@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Git Submodule Complete Guide</title>
+<meta name="description" content="A comprehensive guide to Git Submodule core concepts and practical usage.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/style.css">
+
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+  <header class="site-header">
+  <div class="header-inner">
+    <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </button>
+    <nav class="header-nav">
+      <a class="header-nav-link" href="/">Home</a>
+      <a class="header-nav-link" href="/lectures.html">Courses</a>
+      <a class="header-nav-link active" href="/blogs.html">Blog</a>
+    </nav>
+  </div>
+</header>
+
+
+  
+
+  <main class="main-content no-sidebar" id="main-content">
+    <div class="content-wrap">
+      <article class="blog-post">
+  <header class="blog-post-header">
+    <h1>Git Submodule Complete Guide</h1>
+    <time class="blog-post-date" datetime="2026-10-09T00:00:00+08:00">
+      2026-10-09
+    </time>
+  </header>
+
+  <div class="blog-post-content">
+    <p>Git Submodule is a powerful tool for managing multi-repository dependencies. This article will take you from zero to mastering Submodule’s core usage.</p>
+
+<h2 id="what-is-git-submodule">What is Git Submodule</h2>
+
+<p>Git Submodule allows you to include one Git repository as a subdirectory of another Git repository. This is very useful when you need to reference third-party libraries or share components.</p>
+
+<h2 id="basic-operations">Basic Operations</h2>
+
+<h3 id="add-a-submodule">Add a Submodule</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule add https://github.com/user/repo.git path/to/submodule
+</code></pre></div></div>
+
+<h3 id="clone-a-project-with-submodules">Clone a Project with Submodules</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="nt">--recurse-submodules</span> https://github.com/user/project.git
+</code></pre></div></div>
+
+<h3 id="update-submodules">Update Submodules</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule update <span class="nt">--remote</span>
+</code></pre></div></div>
+
+<h2 id="common-use-cases">Common Use Cases</h2>
+
+<ul>
+  <li>Shared libraries: multiple projects referencing the same utility library</li>
+  <li>Third-party dependencies: referencing external components while keeping versions in sync</li>
+  <li>Modular development: splitting a large project into independent modules</li>
+</ul>
+
+<h2 id="notes">Notes</h2>
+
+<ol>
+  <li>Team members need to initialize submodules after cloning</li>
+  <li>After updating a submodule, you need to commit the change in the parent repo</li>
+  <li>Avoid modifying submodules directly; commit changes in the original repo and pull instead</li>
+</ol>
+
+<p>Hope this article helps!</p>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+  <p>© <span id="current-year"></span> Yao Jun · LLM</p>
+</footer>
+
+
+  <script src="/assets/main.js"></script>
+</body>
+</html>
