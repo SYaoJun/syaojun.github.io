@@ -1,0 +1,22 @@
+---
+layout: page
+title: 姚军的博客
+description: 技术博客文章列表。
+---
+
+<h1>博客</h1>
+
+<div class="blog-list">
+  {% for post in site.posts %}
+  <article class="blog-entry">
+    <time class="blog-date" datetime="{{ post.date | date_to_xmlschema }}">
+      {{ post.date | date: "%Y-%m-%d" }}
+    </time>
+    <a class="blog-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </article>
+  {% endfor %}
+
+  {% if site.posts.size == 0 %}
+  <p class="blog-empty">暂无文章，敬请期待。</p>
+  {% endif %}
+</div>
